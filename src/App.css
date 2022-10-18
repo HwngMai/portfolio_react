@@ -118,5 +118,20 @@
     width: 3.5rem;
   }
 }
-
 /*End - Carousel */
+/*Start - ScrollNav */
+.scrollLine {
+  height: 1px;
+  animation: downline 1s infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+@keyframes downline {
+  from {
+    width: 2rem;
+  }
+  to {
+    width: 4rem;
+  }
+}
+/*End - ScrollNav */

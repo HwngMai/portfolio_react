@@ -12,12 +12,12 @@ const Carousel = () => {
         <h1 className='text-white text-5xl'> VIDEOGRAPHER.</h1>
         <h1 className='text-white text-5xl'> AND A WEB DEVELOPER.</h1>
         <p className='text-red-500 text-xl'>
-          with a endless passion for creativity{" "}
+          with endless passion for creativity{" "}
         </p>
         <div className='carousel__button mt-10 h-14 relative flex flex-row justify-center items-center gap-6'>
-          <div className='circle w-14 h-14 rounded-full bg-white opacity-50 absolute top-0 -left-1.5 transition duration-200'></div>
-          <p className=' text-white text-2xl'>GET TO KNOW ME </p>{" "}
-          <AiOutlinePlus size={30} color='white' />
+          <div className='circle w-14 h-14 rounded-full bg-red-500 opacity-80 absolute top-0 -left-1.5 transition duration-200 z-10'></div>
+          <p className=' z-20 text-white text-2xl'>GET TO KNOW ME </p>{" "}
+          <AiOutlinePlus size={30} color='white' className='z-20' />
         </div>
       </div>
       <div className='carousel__right'></div>

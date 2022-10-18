@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     letterSpacing: {
-      widest: "1em",
+      widest: ".5em",
     },
     extend: {},
   },

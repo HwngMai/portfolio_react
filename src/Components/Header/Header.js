@@ -4,10 +4,12 @@ import { BiAlignRight } from "react-icons/bi";
 const Header = () => {
   return (
     <div className='text-white header inset-x-0 mx-auto fixed mt-5 container top-0 flex justify-between items-center'>
-      <div className='header__logo'>HWNGMVI</div>
+      <div className='header__logo'>
+        <p className='text-xl'>HWNGMVI</p>
+      </div>
       <div className='header__nav flex justify-center items-center gap-5'>
-        <p className='header__nav__text underline'> Let's start </p>
-        <div className='header__nav__button'>
+        <p className='header__nav__text text-xl underline'> Let's start </p>
+        <div className='header__nav__button h-10 w-10 flex items-center justify-center rounded-full bg-red-500'>
           <BiAlignRight size={25} />
         </div>
       </div>
