@@ -7,9 +7,9 @@ const Header = () => {
       <div className='header__logo'>
         <p className='text-xl'>HWNGMVI</p>
       </div>
-      <div className='header__nav flex justify-center items-center gap-5'>
-        <p className='header__nav__text text-xl underline'> Let's start </p>
-        <div className='header__nav__button h-10 w-10 flex items-center justify-center rounded-full bg-red-500'>
+      <div className='header__nav flex relative justify-center items-center gap-5'>
+        <p className='header__nav__text text-xl mr-10 underline'> Let's start! </p>
+        <div className='header__nav__button absolute right-0 cursor-pointer h-10 w-10 flex items-center justify-center rounded-full bg-red-500' >
           <BiAlignRight size={25} />
         </div>
       </div>

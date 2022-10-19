@@ -25,6 +25,12 @@
   --laptop-content-width: 1080px;
   --small-laptop-content-width: 960px;
 }
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .App {
   text-align: center;
 }
@@ -63,6 +69,40 @@
     transform: rotate(360deg);
   }
 }
+/*Start - Header*/
+.header__nav__button {
+  transform: translateX(50%);
+  transition: all 0.3s ease-out 100ms;
+  animation: bubble 0.5s;
+}
+.header__nav__button:hover {
+  width: 4rem;
+  height: 4rem;
+  animation: bubble 0.5s infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+@keyframes bubble {
+  from {
+    width: 4rem;
+    height: 4rem;
+  }
+  to {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+@keyframes rebubble {
+  from {
+    width: 3rem;
+    height: 3rem;
+  }
+  to {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+/*End - Header*/
 /*Start - Carousel */
 .carousel__button,
 .circle {
@@ -97,6 +137,16 @@
     width: 3.5rem;
     transform: translate(219px, 0);
   }
+}
+.bgCarousel__para {
+  font-family: "Nabla", cursive;
+  letter-spacing: 1px;
+  font-size: 30rem;
+  letter-spacing: 0.1px;
+  filter: grayscale(1);
+  /* background: -webkit-linear-gradient(var(--color-sub-gray-1), white);
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 @keyframes recircle {
   0% {
