@@ -5,7 +5,7 @@ const Carousel = () => {
   return (
     <div className='carousel mx-auto h-screen bg-gradient-to-l from-gray-500 to-black flex flex-row justify-center items-center gap-5'>
       <div className='carousel__header self-center mt-20 flex flex-col justify-start items-start'>
-        <p className='text-red-500 tracking-widest font-bold mb-3'>
+        <p className='text-red-500 tracking-widest font-bold text-xl mb-3'>
           HI, I'M HWNGMVI, I'M A
         </p>
         <h1 className='text-white text-5xl'> PHOTOGRAPHER.</h1>

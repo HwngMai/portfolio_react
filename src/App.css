@@ -185,3 +185,71 @@ body {
   }
 }
 /*End - ScrollNav */
+/*Start - Feature */
+.feature__item {
+  width: 400px;
+  aspect-ratio: 4/5;
+}
+.skew-forward-on-hover {
+  animation: reskew 0.5s;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(5px) translateZ(0);
+  transform: perspective(5px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  transition: all 0.5s ease-in;
+}
+.skew-forward-on-hover:hover,
+.skew-forward-on-hover:focus,
+.skew-forward-on-hover:active {
+  animation: skew 0.5s;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+@keyframes skew {
+  0% {
+    width: 400px;
+  }
+  25% {
+    width: 390px;
+    -webkit-transform: skewY(-1deg);
+    transform: skewY(-1deg);
+  }
+  50% {
+    width: 380px;
+    -webkit-transform: skewY(-1.5deg);
+    transform: skewY(-1.5deg);
+  }
+  100% {
+    width: 360px;
+    -webkit-transform: skewY(-3deg);
+    transform: skewY(-3deg);
+  }
+}
+@keyframes reskew {
+  100% {
+    width: 400px;
+  }
+  50% {
+    width: 390px;
+    -webkit-transform: skewY(-1deg);
+    transform: skewY(-1deg);
+  }
+  25% {
+    width: 380px;
+    -webkit-transform: skewY(-1.5deg);
+    transform: skewY(-1.5deg);
+  }
+  0% {
+    width: 360px;
+    -webkit-transform: skewY(-3deg);
+    transform: skewY(-3deg);
+  }
+}
+/*End - Feature */
