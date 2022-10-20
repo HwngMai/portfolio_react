@@ -261,9 +261,51 @@ body {
 .carouselShowcase__item__img {
   filter: grayscale(1);
   transition: all 0.5s;
+  animation: reSkewYslider 0.4s;
 }
-.carouselShowcase__item:hover .carouselShowcase__item__img {
+.carouselShowcase:hover .carouselShowcase__item__img {
   filter: grayscale(0);
   width: 120%;
+  animation: skewYslider 0.4s;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+@keyframes skewYslider {
+  0% {
+    aspect-ratio: 5/2;
+  }
+  100% {
+    aspect-ratio: 2/1;
+  }
+}
+@keyframes reSkewYslider {
+  0% {
+    aspect-ratio: 2/1;
+  }
+  100% {
+    aspect-ratio: 5/2;
+  }
 }
 /*End - Gallery */
+
+/*Start - Showreel */
+.youtube-video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.youtube-video-container::after {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+
+.youtube-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*End - Showreel */

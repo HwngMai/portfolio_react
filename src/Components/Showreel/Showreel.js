@@ -1,9 +1,9 @@
 import React from "react";
-import ShowreelShowcase from "./ShowreelShowcase";
+import GalleryShowcase from "./ShowreelShowcase";
 
 export default function Showreel() {
   return (
-    <div className='showreel container mx-auto mt-20'>
+    <div className='showreel container mx-auto h-screen mt-20'>
       <div className='showreel__para flex flex-col mx-20 justify-start items-start'>
         <h1 className='showreel__para__header text-red-500 tracking-widest text-xl font-bold '>
           {" "}
@@ -12,7 +12,7 @@ export default function Showreel() {
         <p className='showreel__para__para text-xl'>
           Explore some of mine footages that i take
         </p>
-        <ShowreelShowcase />
+        <GalleryShowcase />
       </div>
     </div>
   );

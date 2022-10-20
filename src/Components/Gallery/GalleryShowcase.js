@@ -1,13 +1,7 @@
 import React from "react";
 import { Carousel } from "antd";
 import { GalleryData } from "./GalleryData";
-const contentStyle = {
-  height: "160px",
-  color: "#fff",
-  lineHeight: "160px",
-  textAlign: "center",
-  background: "#364d79",
-};
+
 const GalleryShowcase = () => {
   let renderImage = () => {
     return GalleryData.map((item, index) => {
