@@ -5,7 +5,16 @@ export let FeatureData = [
     url: "https://react-movie-hwngmvi.vercel.app/",
     animate: "bg_animate10",
     animateURL: "../../Assets/bg_animate10.json",
+    image: "../Assets/screencaptureMovie.png",
   },
-  { tenPj: "TodoList", desc: "Quản lý công việc" },
-  { tenPj: "Quản lý sinh viên", desc: "Hệ thống quản lý người dùng" },
+  {
+    tenPj: "Diner",
+    desc: "LandingPage đơn giản",
+    image: "../Assets/screencaptureHappydiner2.png",
+  },
+  {
+    tenPj: "PhoneShop",
+    desc: "Quản lý & bán hàng",
+    image: "../Assets/screencapturePhone.png",
+  },
 ];
