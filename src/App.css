@@ -103,6 +103,12 @@ body {
   }
 }
 /*End - Header*/
+/*Start - Left Nav */
+.leftNav {
+  transform: translateY(-50%) rotate(90deg);
+  top: 50%;
+}
+/*End - Left Nav */
 /*Start - Carousel */
 .carousel__button,
 .circle {
@@ -187,7 +193,7 @@ body {
 /*End - ScrollNav */
 /*Start - Feature */
 .feature__item {
-  width: 350px;
+  width: 100%;
   aspect-ratio: 4/5;
 }
 .skew-forward-on-hover {
@@ -214,40 +220,40 @@ body {
 }
 @keyframes skew {
   0% {
-    width: 350px;
+    width: 100%;
   }
   25% {
-    width: 340px;
+    width: 95%;
     -webkit-transform: skewY(-1deg);
     transform: skewY(-1deg);
   }
   50% {
-    width: 330px;
+    width: 94%;
     -webkit-transform: skewY(-1.5deg);
     transform: skewY(-1.5deg);
   }
   100% {
-    width: 310px;
+    width: 90%;
     -webkit-transform: skewY(-3deg);
     transform: skewY(-3deg);
   }
 }
 @keyframes reskew {
   100% {
-    width: 350px;
+    width: 100%;
   }
   50% {
-    width: 340px;
+    width: 95%;
     -webkit-transform: skewY(-1deg);
     transform: skewY(-1deg);
   }
   25% {
-    width: 330px;
+    width: 94%;
     -webkit-transform: skewY(-1.5deg);
     transform: skewY(-1.5deg);
   }
   0% {
-    width: 310px;
+    width: 90%;
     -webkit-transform: skewY(-3deg);
     transform: skewY(-3deg);
   }
@@ -290,11 +296,15 @@ body {
 
 /*Start - Showreel */
 .youtube-video-container {
+  filter: grayscale(1);
   position: relative;
   overflow: hidden;
   width: 100%;
+  transition: all 0.5s;
 }
-
+.showreelShowcase:hover .youtube-video-container {
+  filter: grayscale(0);
+}
 .youtube-video-container::after {
   display: block;
   content: "";

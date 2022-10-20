@@ -8,7 +8,7 @@ const ShowreelShowcase = () => {
         <div
           key={index}
           className='carouselShowcase__item relative w-full overflow: visible overflow-visible '>
-          <div className=' z-10 carouselShowcase__item__para absolute flex flex-col items-end justify-end bottom-20 right-5 overflow-visible'>
+          <div className=' z-10 carouselShowcase__item__para opacity-50 hover:opacity-100 transition duration-150 absolute flex flex-col items-end justify-end bottom-20 right-5 overflow-visible'>
             <h2 className='font-bold tracking-wider uppercase text-2xl text-red-500'>
               {item.vidName}
             </h2>
@@ -16,10 +16,9 @@ const ShowreelShowcase = () => {
           </div>
           <div className='youtube-video-container'>
             <iframe
-              className='carouselShowcase__item__img object-cover rounded-2xl '
+              className='object-cover rounded-2xl'
               src={item.url}
               alt={item.vidName}
-              allowfullscreen
             />
           </div>
         </div>
