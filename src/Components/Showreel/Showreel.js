@@ -3,7 +3,7 @@ import GalleryShowcase from "./ShowreelShowcase";
 
 export default function Showreel() {
   return (
-    <div className='showreel container mx-auto h-screen mt-20'>
+    <div className='showreel container mx-auto lg:h-screen h-auto mt-20'>
       <div className='showreel__para flex flex-col mx-20 justify-start items-start'>
         <h1 className='showreel__para__header text-red-500 tracking-widest text-xl font-bold '>
           {" "}

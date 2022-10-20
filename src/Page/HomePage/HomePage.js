@@ -7,7 +7,7 @@ import Testimonial from "../../Components/Testimonial/Testimonial";
 
 export default function HomePage() {
   return (
-    <div className='homePage w-full h-full overflow-hidden'>
+    <div className='homePage w-full h-full overflow-hidden flex flex-col'>
       <Carousel />
       <Feature />
       <Gallery />

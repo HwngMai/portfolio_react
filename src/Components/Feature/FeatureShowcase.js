@@ -24,9 +24,8 @@ export default function FeatureShowcase() {
   };
 
   return (
-    <div className='feature__showcase w-full grid grid-cols-3 gap-10 mt-20 '>
+    <div className='feature__showcase sm:grid-cols-1 w-full grid lg:grid-cols-3 md:grid-cols-2 gap-10 mt-20 '>
       {renderFeatureItem()}
     </div>
   );
 }
-

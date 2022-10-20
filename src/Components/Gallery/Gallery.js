@@ -3,7 +3,7 @@ import GalleryShowcase from "./GalleryShowcase";
 
 export default function Gallery() {
   return (
-    <div className='gallery container mx-auto h-screen mt-20'>
+    <div className='gallery container mx-auto lg:h-screen h-auto mt-20'>
       <div className='gallery__para flex flex-col mx-20 justify-start items-start'>
         <h1 className='gallery__para__header text-red-500 tracking-widest text-xl font-bold '>
           {" "}
