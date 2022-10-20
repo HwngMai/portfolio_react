@@ -187,7 +187,7 @@ body {
 /*End - ScrollNav */
 /*Start - Feature */
 .feature__item {
-  width: 400px;
+  width: 350px;
   aspect-ratio: 4/5;
 }
 .skew-forward-on-hover {
@@ -214,42 +214,56 @@ body {
 }
 @keyframes skew {
   0% {
-    width: 400px;
+    width: 350px;
   }
   25% {
-    width: 390px;
+    width: 340px;
     -webkit-transform: skewY(-1deg);
     transform: skewY(-1deg);
   }
   50% {
-    width: 380px;
+    width: 330px;
     -webkit-transform: skewY(-1.5deg);
     transform: skewY(-1.5deg);
   }
   100% {
-    width: 360px;
+    width: 310px;
     -webkit-transform: skewY(-3deg);
     transform: skewY(-3deg);
   }
 }
 @keyframes reskew {
   100% {
-    width: 400px;
+    width: 350px;
   }
   50% {
-    width: 390px;
+    width: 340px;
     -webkit-transform: skewY(-1deg);
     transform: skewY(-1deg);
   }
   25% {
-    width: 380px;
+    width: 330px;
     -webkit-transform: skewY(-1.5deg);
     transform: skewY(-1.5deg);
   }
   0% {
-    width: 360px;
+    width: 310px;
     -webkit-transform: skewY(-3deg);
     transform: skewY(-3deg);
   }
 }
 /*End - Feature */
+/*Start - Gallery */
+.carouselShowcase__item img {
+  width: 110%;
+  aspect-ratio: 5/2;
+}
+.carouselShowcase__item__img {
+  filter: grayscale(1);
+  transition: all 0.5s;
+}
+.carouselShowcase__item:hover .carouselShowcase__item__img {
+  filter: grayscale(0);
+  width: 120%;
+}
+/*End - Gallery */
