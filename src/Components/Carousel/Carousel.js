@@ -3,7 +3,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 const Carousel = () => {
   return (
-    <div className='carousel mx-auto h-screen bg-gradient-to-l from-gray-500 to-black flex flex-row justify-center items-center gap-5'>
+    <div className='carousel h-screen bg-gradient-to-l from-gray-500 to-black flex flex-row justify-center items-center gap-5'>
       <div className='carousel__header self-center mt-20 flex flex-col justify-start items-start'>
         <p className='text-red-500 tracking-widest font-bold text-xl mb-3'>
           HI, I'M HWNGMVI, I'M A
@@ -23,7 +23,7 @@ const Carousel = () => {
         </NavLink>
       </div>
       <div className='bgCarousel rotate-90'>
-        <p className='bgCarousel__para w-fit'>HM</p>
+        <p className='bgCarousel__para w-fit hidden md:block'>HM</p>
       </div>
     </div>
   );
