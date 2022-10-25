@@ -147,7 +147,7 @@ body {
 .bgCarousel__para {
   font-family: "Nabla", cursive;
   letter-spacing: 1px;
-  font-size: 30rem;
+  font-size: 20rem;
   letter-spacing: 0.1px;
   filter: grayscale(1);
   /* background: -webkit-linear-gradient(var(--color-sub-gray-1), white);

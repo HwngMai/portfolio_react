@@ -3,15 +3,24 @@ import { AiOutlinePlus } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 const Carousel = () => {
   return (
-    <div className='carousel h-screen bg-gradient-to-l from-gray-500 to-black flex flex-row justify-center items-center gap-5'>
-      <div className='carousel__header self-center mt-20 flex flex-col justify-start items-start'>
-        <p className='text-red-500 tracking-widest font-bold text-xl mb-3'>
+    <div className='carousel h-screen bg-gradient-to-l from-gray-500 to-black flex flex-row justify-center items-center'>
+      <div className='carousel__header md:px-5 sm:justify-center sm:items-center md:self-center mt-20 flex flex-col lg:pl-20 md:justify-start md:items-start'>
+        <p className='text-red-500 sm:text-base sm:tracking-wider md:tracking-widest font-bold text-xl mb-3'>
           HI, I'M HWNGMVI, I'M A
         </p>
-        <h1 className='text-white text-5xl'> PHOTOGRAPHER.</h1>
-        <h1 className='text-white text-5xl'> VIDEOGRAPHER.</h1>
-        <h1 className='text-white text-5xl'> AND A WEB DEVELOPER.</h1>
-        <p className='text-red-500 text-xl'>
+        <h1 className='text-white sm:text-xl sm:font-bold md:text-5xl'>
+          {" "}
+          PHOTOGRAPHER.
+        </h1>
+        <h1 className='text-white sm:text-xl sm:font-bold md:text-5xl'>
+          {" "}
+          VIDEOGRAPHER.
+        </h1>
+        <h1 className='text-white lg:text-left sm:text-xl sm:font-bold md:text-5xl'>
+          {" "}
+          AND A WEB DEVELOPER.
+        </h1>
+        <p className='text-red-500 sm:text-base md:text-xl'>
           with endless passion for creativity{" "}
         </p>
         <NavLink to='/info' className='cursor-pointer'>
@@ -23,7 +32,7 @@ const Carousel = () => {
         </NavLink>
       </div>
       <div className='bgCarousel rotate-90'>
-        <p className='bgCarousel__para w-fit hidden md:block'>HM</p>
+        <p className='bgCarousel__para w-fit hidden lg:text-5xl lg:block'>HM</p>
       </div>
     </div>
   );

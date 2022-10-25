@@ -27,7 +27,7 @@ const ShowreelShowcase = () => {
   };
 
   return (
-    <div className='showreelShowcase mt-10 w-full rounded-2xl '>
+    <div className='showreelShowcase w-full rounded-2xl '>
       <Carousel effect='fade' className='showreelShowcase__slide w-full '>
         {renderShowreel()}
       </Carousel>

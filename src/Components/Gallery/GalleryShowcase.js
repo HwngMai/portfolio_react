@@ -9,7 +9,7 @@ const GalleryShowcase = () => {
         <div
           key={index}
           className='carouselShowcase__item relative w-full overflow: visible overflow-visible '>
-          <div className=' z-10  carouselShowcase__item__para absolute flex flex-col items-end justify-end bottom-5 right-5 overflow-visible'>
+          <div className=' z-10 carouselShowcase__item__para absolute flex flex-col items-end justify-end bottom-5 right-5 overflow-visible'>
             <h2 className='font-bold tracking-wider uppercase text-2xl text-red-500'>
               {item.imgName}
             </h2>
@@ -27,7 +27,7 @@ const GalleryShowcase = () => {
     });
   };
   return (
-    <div className='carouselShowcase mt-10 w-full  rounded-2xl '>
+    <div className='carouselShowcase md:mt-10 sm:mt-0 md:w-full sm:w-full sm:h-full rounded-2xl '>
       <Carousel effect='fade' className='carouselShowcase__slide w-full '>
         {renderImage()}
       </Carousel>

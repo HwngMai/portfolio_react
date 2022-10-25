@@ -6,9 +6,9 @@ export default function FeatureShowcase() {
   let renderFeatureItem = () => {
     return FeatureData.map((item, index) => {
       return (
-        <div key={index} className='feature__item mt-10 relative mx-auto '>
+        <div key={index} className='feature__item mt-10 relative mx-auto skew-forward-on-hover '>
           <a href={item.url} target='_blank'>
-            <div className='feature__item__bg w-full h-full shadow-2xl skew-forward-on-hover '>
+            <div className='feature__item__bg w-full h-full shadow-2xl rounded-2xl '>
               <img
                 src={item.image}
                 className='feature__item__img object-cover w-full'
@@ -30,7 +30,7 @@ export default function FeatureShowcase() {
   };
 
   return (
-    <div className='feature__showcase sm:grid-cols-1 w-full grid lg:grid-cols-3 md:grid-cols-2 gap-10 mt-20 '>
+    <div className='feature__showcase sm:grid-cols-1 w-full grid lg:grid-cols-3 md:grid-cols-2 gap-10 mt-10 '>
       {renderFeatureItem()}
     </div>
   );
