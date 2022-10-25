@@ -190,6 +190,20 @@ body {
     width: 4rem;
   }
 }
+.scrollLineBack {
+  height: 1px;
+  animation: downlineback 1s infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+@keyframes downlineback {
+  from {
+    width: 4rem;
+  }
+  to {
+    width: 2rem;
+  }
+}
 /*End - ScrollNav */
 /*Start - Feature */
 .feature__item {
