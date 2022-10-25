@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Carousel = () => {
   return (
     <div className='carousel h-screen bg-gradient-to-l from-gray-500 to-black flex flex-row justify-center items-center'>
-      <div className='carousel__header md:px-5 sm:justify-center sm:items-center md:self-center mt-20 flex flex-col lg:pl-20 md:justify-start md:items-start'>
+      <div className='carousel__header z-20 md:px-5 sm:justify-center sm:items-center md:self-center mt-20 flex flex-col lg:pl-20 md:justify-start md:items-start'>
         <p className='text-red-500 sm:text-base sm:tracking-wider md:tracking-widest font-bold text-xl mb-3'>
           HI, I'M HWNGMVI, I'M A
         </p>

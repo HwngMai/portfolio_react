@@ -337,3 +337,13 @@ body {
   height: 100%;
 }
 /*End - Showreel */
+/*ANTD - Carousel button*/
+.ant-carousel .slick-dots-bottom {
+  bottom: 20px;
+}
+.ant-carousel .slick-dots li button {
+  height: 10px;
+}
+.ant-carousel .slick-dots li.slick-active button {
+  background: rgb(201, 62, 62);
+}

@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 export default function LeftNav() {
   return (
-    <div className='leftNav flex m-auto justify-start items-center fixed sm:-left-40 md:-left-32 gap-5 left'>
+    <div className='leftNav flex z-10 m-auto justify-start items-center fixed sm:-left-40 md:-left-32 gap-5 left'>
       {" "}
       <Link to='feature' offset={-10} smooth={true}>
         <span className='text-base tracking-wider hover:text-red-500 text-black transition duration-300'>

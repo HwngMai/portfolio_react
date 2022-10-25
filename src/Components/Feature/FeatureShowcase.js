@@ -18,10 +18,10 @@ export default function FeatureShowcase() {
                 animationData={bg_animate10}></Lottie> */}
             </div>
             <div className='feature__item__para absolute bottom-5 -right-5 flex flex-col justify-end items-end'>
-              <p className='text-red-500 tracking-wider font-bold text-xl mb-3'>
+              <p className='text-red-500 tracking-wider font-bold sm:text-md md:text-2xl mb-3'>
                 {item.tenPj}
               </p>
-              <p className='text-xl'>{item.desc}</p>
+              <p className='sm:text-md md:text-xl'>{item.desc}</p>
             </div>
           </a>
         </div>

@@ -10,10 +10,10 @@ const GalleryShowcase = () => {
           key={index}
           className='carouselShowcase__item relative w-full overflow: visible overflow-visible '>
           <div className=' z-10 carouselShowcase__item__para absolute flex flex-col items-end justify-end bottom-5 right-5 overflow-visible'>
-            <h2 className='font-bold tracking-wider uppercase text-2xl text-red-500'>
+            <h2 className='font-bold tracking-wider uppercase sm:text-md md:text-2xl text-red-500'>
               {item.imgName}
             </h2>
-            <p className='text-xl text-white'>{item.desc}</p>
+            <p className='sm:text-md md:text-xl text-white'>{item.desc}</p>
           </div>
           <img
             className='carouselShowcase__item__img object-cover rounded-2xl '

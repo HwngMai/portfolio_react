@@ -2,8 +2,8 @@ import React from "react";
 import { BiAlignRight } from "react-icons/bi";
 const Header = () => {
   return (
-    <div className='text-white w-full sm:px-10 md:px-20 header z-10 inset-x-5 mx-auto fixed mt-5 top-0 flex justify-between items-center'>
-      <div className='header__logo md:-mr-5'>
+    <div className='text-white w-full sm:px-10 md:px-20 header z-10 mx-auto fixed mt-5 top-0 flex justify-between items-center'>
+      <div className='header__logo'>
         <p className='text-xl tracking-wider'>HWNGMVI</p>
       </div>
       <div className='header__nav flex relative justify-center items-center gap-5'>
