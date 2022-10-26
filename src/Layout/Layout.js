@@ -31,7 +31,7 @@ export default function Layout({ Component }) {
       <div className='-z-10 w-full'>
         <Component />
       </div>
-      <div ref={myRef} className='pt-10 -z-10 w-full'>
+      <div ref={myRef} className='w-full'>
         <Footer />
       </div>
     </div>

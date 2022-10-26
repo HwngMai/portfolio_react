@@ -13,17 +13,17 @@ export default function Scroll() {
   if (scroll) {
     return (
       <Link to='carousel' smooth={true}>
-        <div className='scrollNav w-28 h-28 container rotate-90 fixed bottom-10 md:right-0 sm:-right-10 flex justify-end items-center gap-4'>
-          <div className='scrollLineBack w-2 bg-gray-800'></div>
-          <p className='text-gray-800'>Up!</p>
+        <div className='scrollNav z-30 w-28 h-28 container rotate-90 fixed bottom-10 md:right-0 sm:-right-10 flex justify-end items-center gap-4'>
+          <div className='scrollLineBack w-2 bg-white'></div>
+          <p className='text-white'>Up!</p>
         </div>
       </Link>
     );
   } else {
     return (
-      <div className='scrollNav w-28 h-28 container rotate-90 fixed bottom-10 md:right-0 sm:-right-10 flex justify-between items-center gap-1'>
-        <div className='scrollLine w-2 bg-gray-800'></div>
-        <p className='text-gray-800'>Scroll</p>
+      <div className='scrollNav z-30 w-28 h-28 container rotate-90 fixed bottom-10 md:right-0 sm:-right-10 flex justify-between items-center gap-1'>
+        <div className='scrollLine w-2 bg-gray-500'></div>
+        <p className='text-gray-500'>Scroll</p>
       </div>
     );
   }

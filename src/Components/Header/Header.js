@@ -3,7 +3,7 @@ import { BiAlignRight } from "react-icons/bi";
 const Header = () => {
   return (
     <div
-      className='text-white w-full sm:px-10 md:px-20 header z-10 mx-auto fixed mt-5 top-0 flex justify-between items-center'>
+      className='text-white z-30 w-full sm:px-10 md:px-20 header mx-auto fixed mt-5 top-0 flex justify-between items-center'>
       <div className='header__logo'>
         <p className='text-xl tracking-wider'>HWNGMVI</p>
       </div>

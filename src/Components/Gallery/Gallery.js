@@ -10,7 +10,7 @@ export default function Gallery() {
           GALLERY{" "}
         </h1>
         <p className='gallery__para__para text-left text-xl'>
-          Explore some of mine pictures that i take
+          My gears: Sony a6400 | Sigma 16 f1.4 | Sony FE 85 f1.8 | Sony FE 24-105 F4 G | Zhiyun crane 2 
         </p>
         <GalleryShowcase />
       </div>

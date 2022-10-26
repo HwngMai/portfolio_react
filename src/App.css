@@ -351,7 +351,7 @@ body {
   height: 100%;
 }
 /*End - Showreel */
-/*ANTD - Carousel button*/
+/*ANTD START - Carousel button*/
 .ant-carousel .slick-dots-bottom {
   bottom: 20px;
 }
@@ -360,4 +360,9 @@ body {
 }
 .ant-carousel .slick-dots li.slick-active button {
   background: rgb(201, 62, 62);
+}
+/*ANTD END - Carousel button*/
+/* Start Testi */
+.testi {
+  height: 70vh;
 }

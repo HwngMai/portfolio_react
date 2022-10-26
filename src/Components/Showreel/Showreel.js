@@ -10,7 +10,7 @@ export default function Showreel() {
           SHOWREEL{" "}
         </h1>
         <p className='showreel__para__para text-left text-xl'>
-          Explore some of mine footages that i take
+          Footage taken and edited by me
         </p>
         <GalleryShowcase />
       </div>
