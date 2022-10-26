@@ -25,6 +25,11 @@ export let ShowreelData = [
     url: "https://www.youtube.com/embed/kMBSExRmDg0",
   },
   {
+    vidName: "Travel-02",
+    desc: "Phan Rang | Sony a6400 | Sigma 16 f1.4 | SELP 18-105 f4 G | Zhiyun Crane 2",
+    url: "https://www.youtube.com/embed/pp12hRqG_js",
+  },
+  {
     vidName: "Portrait-04",
     desc: "Heavenly | Sony a6400 | SEL 50 f1.8 | ZHIYUN Crane 2",
     url: "https://www.youtube.com/embed/OD1P8YeYNGY",
