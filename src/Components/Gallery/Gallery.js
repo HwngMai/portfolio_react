@@ -10,8 +10,20 @@ export default function Gallery() {
           GALLERY{" "}
         </h1>
         <p className='gallery__para__para text-left text-xl'>
-          My gears: Sony a6400 | Sigma 16 f1.4 | Sony FE 85 f1.8 | Sony FE 24-105 F4 G | Zhiyun crane 2 
+          My gears: Sony a6400 | Sigma 16 f1.4 | Sony FE 85 f1.8 | Sony FE
+          24-105 F4 G | Zhiyun crane 2
         </p>
+        <p className='text-xl text-left '>
+          Want to see more?  
+          <a
+            target='_blank'
+            className='inline-block ml-1'
+            href='https:/www.flickr.com/photos/147070878@N06'>
+            {" "}
+            <p className='text-xl underline text-left'>  My Flickr</p>
+          </a>{" "}
+        </p>
+
         <GalleryShowcase />
       </div>
     </div>

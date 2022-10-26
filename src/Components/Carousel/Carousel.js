@@ -3,7 +3,36 @@ import { AiOutlinePlus } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 const Carousel = () => {
   return (
-    <div className='carousel z-20 h-screen bg-gradient-to-l from-gray-500 to-black flex flex-row justify-center items-center'>
+    <div className='carousel z-20 relative h-screen bg-gradient-to-l from-gray-500 to-black flex flex-row justify-center items-center'>
+      <div className='carousel_plus cursor-default z-20 absolute left-10 top-20 text-white flex gap-0 leading-none flex-col items-center justify-center'>
+      <p className='hover:text-red-500 transition plusRed'>+</p>
+        <p className='hover:text-red-500 transition'>
+          +<span className='text-red-500 hover:text-gray-500 plusGray'>+</span>+
+        </p>
+        <p className='hover:text-red-500 transition'>+</p>
+      </div>
+      <div className='carousel_plus cursor-default z-20 absolute right-32 bottom-20 text-white flex gap-0 leading-none flex-col items-center justify-center'>
+      <p className='hover:text-red-500 transition plusRed'>+</p>
+        <p className='hover:text-red-500 transition'>
+          +<span className='text-red-500 hover:text-gray-500 plusGray'>+</span>+
+        </p>
+        <p className='hover:text-red-500 transition'>+</p>
+      </div>
+
+      <div className='carousel_plus hover:text-red-500 z-20 absolute right-10 top-32 text-white flex gap-0 leading-none flex-col items-center justify-center'>
+        <p className='hover:text-red-500 transition'>+</p>
+        <p className='hover:text-red-500 transition'>
+          +<span className='text-red-500'>+</span>+
+        </p>
+        <p className='hover:text-red-500 transition'>+</p>
+      </div>
+      <div className='carousel_plus hover:text-red-500 z-20 absolute left-32 bottom-32 text-white flex gap-0 leading-none flex-col items-center justify-center'>
+        <p className='hover:text-red-500 transition plusRed'>+</p>
+        <p className='hover:text-red-500 transition'>
+          +<span className='text-red-500 plusGray'>+</span>+
+        </p>
+        <p className='hover:text-red-500 transition'>+</p>
+      </div>
       <div className='carousel__header z-20 md:px-5 sm:justify-center sm:items-center md:self-center mt-20 flex flex-col lg:pl-20 md:justify-start md:items-start'>
         <p className='text-red-500 sm:text-base sm:tracking-wider md:tracking-widest font-bold text-xl mb-3'>
           HI, I'M HWNGMVI, I'M A

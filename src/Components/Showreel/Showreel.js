@@ -10,7 +10,12 @@ export default function Showreel() {
           SHOWREEL{" "}
         </h1>
         <p className='showreel__para__para text-left text-xl'>
-          Footage taken and edited by me
+          Footage taken and edited by me. Want to watch more? {" "}
+          <a
+            target='_blank'
+            href='https://www.youtube.com/channel/UCDcODZCSLeWELJ4wP8mWJtw'>
+            <span className='text-xl underline text-left'>My Youtube</span>
+          </a>
         </p>
         <GalleryShowcase />
       </div>

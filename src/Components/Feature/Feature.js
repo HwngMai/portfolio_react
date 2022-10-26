@@ -12,9 +12,10 @@ export default function Feature() {
           Explore some of mine latest website projects
         </p>
         <p className='feature__para__para text-xl text-left'>
-          My skills: HTML5 CSS3 | GIT, API | JAVASCRIPT ES6 | REACTJS | TAILWIND BS |
-          
+          My skills: HTML5 CSS3 | GIT | API | JAVASCRIPT ES6 | REACTJS |
+          TAILWIND BS |
         </p>
+
         <FeatureShowcase />
       </div>
     </div>

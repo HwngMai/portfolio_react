@@ -176,6 +176,30 @@ body {
 }
 /*End - Carousel */
 /*Start - ScrollNav */
+.plusRed:hover {
+  animation: redplus 1s infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+@keyframes redplus {
+  from {
+    color: white;
+  }
+  to {
+    color: red;
+  }
+}
+.plusGray:hover {
+  animation: grayplus 1s infinite;
+}
+@keyframes grayplus {
+  from {
+    color: red;
+  }
+  to {
+    color: white;
+  }
+}
 .scrollLine {
   height: 1px;
   animation: downline 1s infinite;

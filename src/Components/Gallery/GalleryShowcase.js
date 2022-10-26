@@ -27,7 +27,7 @@ const GalleryShowcase = () => {
     });
   };
   return (
-    <div className='carouselShowcase md:mt-10 sm:mt-0 md:w-full sm:w-full sm:h-full rounded-2xl '>
+    <div className='carouselShowcase md:mt-5 sm:mt-0 md:w-full sm:w-full sm:h-full rounded-2xl '>
       <Carousel effect='fade' className='carouselShowcase__slide w-full '>
         {renderImage()}
       </Carousel>
