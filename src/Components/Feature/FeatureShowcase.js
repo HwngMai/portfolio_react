@@ -21,7 +21,7 @@ export default function FeatureShowcase() {
               <p className='text-red-500 tracking-wider font-bold sm:text-md md:text-2xl mb-3'>
                 {item.tenPj}
               </p>
-              <p className='sm:text-md md:text-xl hover:text-gray-200 transition text-gray-500 font-bold'>{item.desc}</p>
+              <p className='sm:text-md md:text-xl hover:text-blue-500 transition text-gray-500 '>{item.desc}</p>
             </div>
           </a>
         </div>
