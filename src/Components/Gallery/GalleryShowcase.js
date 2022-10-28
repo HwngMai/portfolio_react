@@ -1,7 +1,6 @@
 import React from "react";
 import { Carousel } from "antd";
 import { GalleryData } from "./GalleryData";
-
 const GalleryShowcase = () => {
   let renderImage = () => {
     return GalleryData.map((item, index) => {
@@ -18,8 +17,6 @@ const GalleryShowcase = () => {
           <img
             className='carouselShowcase__item__img object-cover rounded-2xl '
             src={item.url}
-            // width={2048}
-            // height={1365}
             alt={item.imgName}
           />
         </div>

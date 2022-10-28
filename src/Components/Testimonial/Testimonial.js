@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Testimonial() {
   return (
-    <div className='h-2/4 testi mt-5 bg-gradient-to-r from-gray-500 to-black py-3 '>
+    <div className='h-2/4 z-20 testi flex justify-center items-center mt-5 bg-gradient-to-r from-gray-500 to-black py-3 '>
       <div className='testi__para container z-20 w-2/3 mx-auto flex flex-col items-center justify-center gap-3'>
         <p className=' text-red-500 md:text-sm tracking-widest lg:text-xl font-bold'>
           My favorite quotes:

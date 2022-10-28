@@ -8,15 +8,15 @@ export let FeatureData = [
     image: "../Assets/screencaptureMovie.png",
   },
   {
-    tenPj: "Diner",
-    desc: "LandingPage đơn giản",
-    image: "../Assets/screencaptureHappydiner2.png",
-    url: "https://happydiner.netlify.app/",
-  },
-  {
     tenPj: "PhoneShop",
     desc: "Quản lý & bán hàng",
     image: "../Assets/screencapturePhone.png",
     url: "http://bc04-capstone_js-ablaze-secretary.surge.sh/",
+  },
+  {
+    tenPj: "Diner",
+    desc: "LandingPage đơn giản",
+    image: "../Assets/screencaptureHappydiner2.png",
+    url: "https://happydiner.netlify.app/",
   },
 ];
