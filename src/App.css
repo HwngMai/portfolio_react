@@ -149,10 +149,7 @@ body {
   letter-spacing: 1px;
   font-size: 20rem;
   letter-spacing: 0.1px;
-  filter: grayscale(1);
-  /* background: -webkit-linear-gradient(var(--color-sub-gray-1), white);
-  background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  /* filter: grayscale(1); */
 }
 @keyframes recircle {
   0% {
