@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-scroll";
 export default function Scroll() {
@@ -7,9 +6,6 @@ export default function Scroll() {
   let scroll = useSelector((state) => {
     return state.LocationReducer.scroll;
   });
-  // const [stateScroll, setStateScroll] = useState();
-  // setStateScroll(scroll);
-  // console.log("stateScroll: ", stateScroll);
   if (scroll) {
     return (
       <Link to='carousel' smooth={true}>
