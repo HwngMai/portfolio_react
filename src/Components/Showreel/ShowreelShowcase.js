@@ -1,7 +1,13 @@
 import React from "react";
 import { Carousel } from "antd";
 import { ShowreelData } from "./ShowreelData";
+import { useInView } from "react-intersection-observer";
 const ShowreelShowcase = () => {
+  const { ref: carouRef, inView: carouVisible } = useInView();
+  const carourClassName = `${
+    carouVisible ? "slide-top-delay-3" : ""
+  } showreelShowcase md:mt-5 sm:mt-0 md:w-full sm:w-full sm:h-full rounded-2xl `;
+
   let renderShowreel = () => {
     return ShowreelData?.map((item, index) => {
       return (
@@ -27,7 +33,7 @@ const ShowreelShowcase = () => {
   };
 
   return (
-    <div className='showreelShowcase w-full mt-2 rounded-2xl '>
+    <div ref={carouRef} className={`${carourClassName}`}>
       <Carousel effect='fade' className='showreelShowcase__slide w-full '>
         {renderShowreel()}
       </Carousel>

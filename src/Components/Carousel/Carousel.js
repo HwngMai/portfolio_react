@@ -1,6 +1,5 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import { useState, useEffect } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -25,7 +24,7 @@ const Carousel = () => {
   } text-red-500 sm:text-base md:text-xl`;
   const headerClassName = `${
     headerVisible ? "slide-top" : ""
-  }  text-red-500 sm:text-base sm:tracking-wider lg:text-left md:tracking-widest font-bold text-xl`;
+  }  text-red-500 sm:text-base mb-5 sm:tracking-wider lg:text-left md:tracking-widest font-bold text-xl`;
   const paraClassName = ` ${
     paraVisible ? "slide-left" : ""
   } text-white lg:text-left sm:text-xl sm:font-bold md:text-5xl`;

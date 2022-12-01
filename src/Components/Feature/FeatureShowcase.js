@@ -1,27 +1,31 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 import { FeatureData } from "./FeatureData";
-// import bg_animate10 from "../../Assets/bg_animate10.json";
-// import Lottie from "lottie-react";
 export default function FeatureShowcase() {
+  const { ref: itemRef, inView: itemInvisible } = useInView();
   let renderFeatureItem = () => {
     return FeatureData.map((item, index) => {
       return (
-        <div key={index} className='feature__item mt-10 relative mx-auto skew-forward-on-hover '>
+        <div
+          ref={itemRef}
+          key={index}
+          className={` ${
+            itemInvisible ? "skew-forward-on-hover" : ""
+          } feature__item mt-10 relative mx-auto`}>
           <a href={item.url} target='_blank'>
             <div className='feature__item__bg w-full h-full shadow-2xl rounded-2xl '>
               <img
                 src={item.image}
                 className='feature__item__img object-cover w-full'
               />
-              {/* <Lottie
-                className=' absolute top-0 -left-20'
-                animationData={bg_animate10}></Lottie> */}
             </div>
             <div className='feature__item__para absolute bottom-5 -right-5 flex flex-col justify-end items-end'>
               <p className='text-red-500 tracking-wider font-bold sm:text-md md:text-2xl mb-3'>
                 {item.tenPj}
               </p>
-              <p className='sm:text-md md:text-xl hover:text-blue-500 transition text-gray-500 '>{item.desc}</p>
+              <p className='sm:text-md md:text-xl hover:text-blue-500 transition text-gray-500 '>
+                {item.desc}
+              </p>
             </div>
           </a>
         </div>
