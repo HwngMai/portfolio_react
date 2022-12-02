@@ -19,58 +19,60 @@ const Carousel = () => {
   const buttonClassname = `${
     buttonVisible ? "text-focus-in" : ""
   } carousel__button mt-10 h-14 relative flex flex-row justify-center items-center gap-6`;
-  const para2ClassName = ` ${
+  const para2ClassName = `${
     para2Visible ? "tracking-in-contract" : ""
   } text-red-500 sm:text-base md:text-xl`;
   const headerClassName = `${
     headerVisible ? "slide-top" : ""
   }  text-red-500 sm:text-base mb-5 sm:tracking-wider lg:text-left md:tracking-widest font-bold text-xl`;
-  const paraClassName = ` ${
+  const paraClassName = `${
     paraVisible ? "slide-left" : ""
   } text-white lg:text-left sm:text-xl sm:font-bold md:text-5xl`;
-  const leftParaClassName = ` ${
+  const leftParaClassName = `${
     leftVisible ? "text-pop-up-top" : ""
   } bgCarousel__para w-fit hidden lg:text-5xl lg:block`;
   return (
     <div
       ref={mainRef}
       className='carousel z-20 relative h-screen bg-gradient-to-l from-gray-500 to-black flex flex-row justify-center items-center'>
-      <div className='carousel_plus cursor-default z-20 absolute left-24 top-20 text-white flex gap-0 leading-none flex-col items-center justify-center'>
+      <div className='carousel__plus cursor-default z-20 absolute left-24 top-20 text-white flex gap-0 leading-none flex-col items-center justify-center'>
+        <p>+</p>
+        <p>
+          +<span className='carousel__plus__center hover:text-gray-500'>+</span>
+          +
+        </p>
+        <p>+</p>
+      </div>
+      <div className='carousel__plus cursor-default z-20 absolute left-64 bottom-20 text-white flex gap-0 leading-none flex-col items-center justify-center'>
+        <p>+</p>
+        <p>
+          +<span className='carousel__plus__center hover:text-gray-500'>+</span>
+          +
+        </p>
+        <p>+</p>
+      </div>
+      <div className='carousel__plus  z-20 absolute right-10 top-32 text-white flex gap-0 leading-none flex-col items-center justify-center'>
+        <p>+</p>
+        <p>
+          +<span className='carousel__plus__center'>+</span>+
+        </p>
+        <p>+</p>
+      </div>
+      <div className='carousel__plus  z-20 absolute right-48 bottom-32 text-white flex gap-0 leading-none flex-col items-center justify-center'>
+        <p>+</p>
+        <p>
+          +<span className='carousel__plus__center'>+</span>+
+        </p>
+        <p className='hover:text-red-500 transition'>+</p>
+      </div>
+      <div className='carousel__plus hover:text-red-500 z-20 absolute sm:hidden lg:block right-64 bottom-64 text-white flex gap-0 leading-none flex-col items-center justify-center'>
         <p className='hover:text-red-500 transition plusRed'>+</p>
         <p className='hover:text-red-500 transition'>
-          +<span className='text-red-500 hover:text-gray-500 plusGray'>+</span>+
+          +<span className='carousel__plus__center'>+</span>+
         </p>
         <p className='hover:text-red-500 transition'>+</p>
       </div>
-      <div className='carousel_plus cursor-default z-20 absolute left-64 bottom-20 text-white flex gap-0 leading-none flex-col items-center justify-center'>
-        <p className='hover:text-red-500 transition plusRed'>+</p>
-        <p className='hover:text-red-500 transition'>
-          +<span className='text-red-500 hover:text-gray-500 plusGray'>+</span>+
-        </p>
-        <p className='hover:text-red-500 transition'>+</p>
-      </div>
-      <div className='carousel_plus hover:text-red-500 z-20 absolute right-10 top-32 text-white flex gap-0 leading-none flex-col items-center justify-center'>
-        <p className='hover:text-red-500 transition'>+</p>
-        <p className='hover:text-red-500 transition'>
-          +<span className='text-red-500'>+</span>+
-        </p>
-        <p className='hover:text-red-500 transition'>+</p>
-      </div>
-      <div className='carousel_plus hover:text-red-500 z-20 absolute right-48 bottom-32 text-white flex gap-0 leading-none flex-col items-center justify-center'>
-        <p className='hover:text-red-500 transition plusRed'>+</p>
-        <p className='hover:text-red-500 transition'>
-          +<span className='text-red-500 plusGray'>+</span>+
-        </p>
-        <p className='hover:text-red-500 transition'>+</p>
-      </div>
-      <div className='carousel_plus hover:text-red-500 z-20 absolute sm:hidden lg:block right-64 bottom-64 text-white flex gap-0 leading-none flex-col items-center justify-center'>
-        <p className='hover:text-red-500 transition plusRed'>+</p>
-        <p className='hover:text-red-500 transition'>
-          +<span className='text-red-500 plusGray'>+</span>+
-        </p>
-        <p className='hover:text-red-500 transition'>+</p>
-      </div>
-      <div className='carousel__header z-20 md:px-5 sm:justify-center sm:items-center md:self-center mt-20 flex flex-col lg:pl-20 md:justify-start md:items-start'>
+      <div className='carousel___header z-20 md:px-5 sm:justify-center sm:items-center md:self-center mt-20 flex flex-col lg:pl-20 md:justify-start md:items-start'>
         {headerVisible ? (
           <p ref={headerRef} className={` slide-top ${headerClassName}`}>
             HI, I'M HWNGMVI, I'M A

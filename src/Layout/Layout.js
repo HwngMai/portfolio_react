@@ -24,7 +24,7 @@ export default function Layout({ Component }) {
     dispatch(setScroll(true));
   } else dispatch(setScroll(false));
   return (
-    <div className='layout'>
+    <div className='layout relative'>
       <Header />
       <Scroll />
       <LeftNav />
