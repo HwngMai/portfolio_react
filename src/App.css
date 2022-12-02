@@ -166,11 +166,11 @@ body {
 @keyframes shine-white {
   0% {
     color: red;
-    filter: blur(0.3px);
+    filter: blur(1.2px);
   }
   100% {
     color: white;
-    filter: blur(1.2px);
+    filter: blur(0.3px);
   }
 }
 .carousel__button,
