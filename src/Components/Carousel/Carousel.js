@@ -63,14 +63,14 @@ const Carousel = () => {
         <p>
           +<span className='carousel__plus__center'>+</span>+
         </p>
-        <p className='hover:text-red-500 transition'>+</p>
+        <p className=''>+</p>
       </div>
-      <div className='carousel__plus hover:text-red-500 z-20 absolute sm:hidden lg:block right-64 bottom-64 text-white flex gap-0 leading-none flex-col items-center justify-center'>
-        <p className='hover:text-red-500 transition plusRed'>+</p>
-        <p className='hover:text-red-500 transition'>
+      <div className='carousel__plus  z-20 absolute sm:hidden lg:block right-64 bottom-64 text-white flex gap-0 leading-none flex-col items-center justify-center'>
+        <p className='plusRed'>+</p>
+        <p>
           +<span className='carousel__plus__center'>+</span>+
         </p>
-        <p className='hover:text-red-500 transition'>+</p>
+        <p>+</p>
       </div>
       <div className='carousel___header z-20 md:px-5 sm:justify-center sm:items-center md:self-center mt-20 flex flex-col lg:pl-20 md:justify-start md:items-start'>
         {headerVisible ? (

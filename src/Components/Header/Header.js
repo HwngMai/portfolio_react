@@ -14,11 +14,11 @@ const Header = () => {
     if (openDrawer == false) {
       setTimeout(() => {
         setOpenDrawer(true);
-      }, 1000);
+      }, 800);
     } else
       setTimeout(() => {
         setOpenDrawer(false);
-      }, 0);
+      }, 150);
   };
   const [animationStatus, setAnimationStatus] = useState(false);
   // lấy thông tin từ store về state bằng useSelector
@@ -26,43 +26,46 @@ const Header = () => {
     return state.LocationReducer.header;
   });
   return (
-    <div
-      className={`${
-        header ? "justify-between" : "justify-end"
-      } header text-white z-40 w-full h-10 sm:px-10 md:px-20  mx-auto fixed mt-10 top-0 flex  items-center`}>
-      <div className={`${header ? "" : "hidden "}  header__logo`}>
-        <p
-          className={`${
-            animationStatus ? "text-blur-out " : ""
-          } text-xl tracking-wider`}>
-          HWNGMVI
-        </p>
-      </div>
-      <div className='header__nav flex relative justify-center items-center gap-5'>
-        <Link to='feature' offset={-10} smooth={true}>
-          <button
-            onClick={() => {
-              setAnimationStatus(true);
-              setTimeout(() => {
-                setAnimationStatus(false);
-              }, 1200);
-            }}
-            className={`${animationStatus ? "text-blur-out " : ""} ${
-              header ? "" : "hidden "
-            } header__nav__text text-xl pr-10 underline`}>
-            Let's start!{" "}
-          </button>
-        </Link>
-        <div
-          className={`header__nav__button ${
-            trigger ? "bubble-full" : "bubble-full-re"
-          } absolute right-0 overflow-hidden cursor-pointer h-10 w-10 flex items-center z-40 justify-center rounded-full bg-red-500`}>
-          <button className='z-40' onClick={handleOpenDrawer}>
-            <BiAlignRight size={25} />
-          </button>
+    <>
+      {openDrawer && <Drawer />}
+      <div
+        className={`${
+          header ? "justify-between" : "justify-end"
+        } header text-white z-40 w-full h-10 sm:px-10 md:px-20  mx-auto fixed mt-10 top-0 flex  items-center`}>
+        <div className={`${header ? "" : "hidden"} header__logo`}>
+          <p
+            className={`${
+              animationStatus ? "text-blur-out " : ""
+            } text-xl tracking-wider`}>
+            HWNGMVI
+          </p>
+        </div>
+        <div className='header__nav flex relative justify-center items-center gap-5'>
+          <Link to='feature' offset={-10} smooth={true}>
+            <button
+              onClick={() => {
+                setAnimationStatus(true);
+                setTimeout(() => {
+                  setAnimationStatus(false);
+                }, 1200);
+              }}
+              className={`${animationStatus ? "text-blur-out " : ""} ${
+                header ? "" : "hidden "
+              } header__nav__text text-xl pr-10 underline`}>
+              Let's start!{" "}
+            </button>
+          </Link>
+          <div
+            className={`header__nav__button ${
+              trigger ? "bubble-full" : "bubble-full-re"
+            } absolute right-0 overflow-hidden cursor-pointer h-10 w-10 flex items-center z-30 justify-center rounded-full bg-red-500`}>
+            <button className='z-40' onClick={handleOpenDrawer}>
+              <BiAlignRight size={25} />
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
