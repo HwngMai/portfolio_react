@@ -8,7 +8,7 @@ export default function Testimonial() {
   const { ref: paraRef, inView: paraVisible } = useInView();
   const paraClassName = ` ${
     paraVisible ? "text-focus-in" : ""
-  } text-white text-center sm:text-xl md:text-2xl lg:text-3xl`;
+  } text-white text-center sm:text-md md:text-xl lg:text-2xl`;
   const { ref: para2Ref, inView: para2Visible } = useInView();
   const para2ClassName = `${
     para2Visible ? "slide-top-delay-3" : ""

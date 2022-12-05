@@ -11,7 +11,7 @@ const Header = () => {
   console.log("openDrawer: ", openDrawer);
   const handleOpenDrawer = () => {
     setTrigger((trigger) => !trigger);
-    if (!openDrawer) {
+    if (openDrawer == false) {
       setTimeout(() => {
         setOpenDrawer(true);
       }, 1000);
