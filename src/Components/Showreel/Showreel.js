@@ -13,20 +13,23 @@ export default function Showreel() {
   } showreel__para__para sm:text-base md:text-xl text-center`;
   return (
     <div className='showreel container mx-auto lg:h-5/6 md:h-auto mt-10'>
-      <div className='showreel__para flex flex-col md:mx-20 sm:mx-5 md:justify-center md:items-center lg:justify-start lg:items-start'>
+      <div className='showreel__para flex flex-col md:mx-20 sm:mx-5 md:justify-center md:items-center lg:justify-start lg:items-center'>
         <h1 ref={headerRef} className={`${headerClassName}`}>
           {" "}
           SHOWREEL{" "}
         </h1>
         <p ref={paraRef} className={`${paraClassName}`}>
-          Footage taken and edited by me. Want to watch more?{" "}
-          <a
-            target='_blank'
-            href='https://www.youtube.com/channel/UCDcODZCSLeWELJ4wP8mWJtw'>
-            <span className='sm:text-base md:text-xl underline text-center'>
-              My Youtube
-            </span>
-          </a>
+          Footage taken and edited by me.
+          <p>
+            Want to watch more?{" "}
+            <a
+              target='_blank'
+              href='https://www.youtube.com/channel/UCDcODZCSLeWELJ4wP8mWJtw'>
+              <span className='sm:text-base md:text-xl underline text-center'>
+                My Youtube
+              </span>
+            </a>
+          </p>
         </p>
         <GalleryShowcase />
       </div>

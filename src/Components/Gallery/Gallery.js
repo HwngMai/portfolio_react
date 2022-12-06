@@ -19,7 +19,7 @@ export default function Gallery() {
 
   return (
     <div className=' container mx-auto lg:h-5/6 md:h-auto my-10'>
-      <div className='gallery__para flex flex-col md:mx-20 sm:mx-5 md:justify-center md:items-center lg:justify-start lg:items-start'>
+      <div className='gallery__para flex flex-col md:mx-20 sm:mx-5 md:justify-center md:items-center lg:justify-start lg:items-center'>
         <h1 ref={headerRef} className={`${headerClassName}`}>
           {" "}
           GALLERY{" "}
@@ -27,6 +27,30 @@ export default function Gallery() {
         <p ref={paraRef} className={`${paraClassName}`}>
           My gears: Sony a6400 | Sigma 16 f1.4 | Sony FE 85 f1.8 | Sony FE
           24-105 F4 G | Zhiyun crane 2
+        </p>
+        <p ref={para2Ref} className={`${para2ClassName}`}>
+          My skills:
+          <span className='hover:text-red-500 transition cursor-default'>
+            {" "}
+            Adobe Photoshop
+          </span>{" "}
+          |
+          <span className='hover:text-red-500 transition cursor-default'>
+            {" "}
+            Adobe Lightroom{" "}
+          </span>
+          |{" "}
+          <span className='hover:text-red-500 transition cursor-default'>
+            {" "}
+            Adobe Premiere{" "}
+          </span>
+          |{" "}
+          <span className='hover:text-red-500 transition cursor-default'>
+            {" "}
+            Final Cut Pro{" "}
+          </span>
+          |{" "}
+          |{" "}
         </p>
         <p ref={para2Ref} className={`${para2ClassName}`}>
           Want to see more?

@@ -17,7 +17,7 @@ export default function Feature() {
   } feature__para__para sm:text-base md:text-xl text-center`;
   return (
     <div className='feature container mx-auto lg:h-5/6 md:h-auto pb-10 my-10'>
-      <div className='feature__para flex flex-col md:mx-20 sm:mx-5 md:justify-center md:items-center lg:justify-start lg:items-start'>
+      <div className='feature__para flex flex-col md:mx-20 sm:mx-5 md:justify-center md:items-center lg:justify-start lg:items-center'>
         <h1 ref={headerRef} className={`${headerClassName}`}>
           {" "}
           PROJECTS{" "}
@@ -57,6 +57,19 @@ export default function Feature() {
             TAILWIND BS
           </span>{" "}
           |
+        </p>
+        <p ref={para2Ref} className={`${para2ClassName}`}>
+          Want to read more?
+          <a
+            target='_blank'
+            className='inline-block ml-1'
+            href='https:/www.github.com/hwngmai'>
+            {" "}
+            <p className='sm:text-base md:text-xl underline text-center'>
+              {" "}
+              My Github
+            </p>
+          </a>{" "}
         </p>
         <FeatureShowcase />
       </div>

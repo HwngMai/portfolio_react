@@ -11,7 +11,7 @@ export default function FeatureShowcase() {
           key={index}
           className={` ${
             itemInvisible ? "skew-forward-on-hover" : ""
-          } feature__item mt-10 relative mx-auto`}>
+          } feature__item mt-4 relative mx-auto`}>
           <a href={item.url} target='_blank'>
             <div className='feature__item__bg w-full h-full shadow-2xl rounded-2xl '>
               <img
