@@ -29,13 +29,13 @@ const Carousel = () => {
     paraVisible ? "slide-left" : ""
   } text-white lg:text-left sm:text-xl sm:font-bold md:text-5xl`;
   const leftParaClassName = `${
-    leftVisible ? "text-pop-up-top" : ""
-  } bgCarousel__para w-fit hidden lg:text-5xl lg:block`;
+    leftVisible ? "slide-left-delay-1" : ""
+  } bgCarousel__para hidden object-cover z-30 h-screen w-fit lg:text-5xl xl:block`;
   return (
     <div
       ref={mainRef}
-      className='carousel z-20 relative h-screen bg-gradient-to-l from-gray-500 to-black flex flex-row justify-center items-center'>
-      <div className='carousel__plus cursor-default z-20 absolute left-24 top-20 text-white flex gap-0 leading-none flex-col items-center justify-center'>
+      className='carousel overflow-visible z-10 relative h-screen bg-gradient-to-l from-gray-500 to-black flex flex-row justify-center items-center'>
+      <div className='carousel__plus cursor-default z-40 absolute left-24 top-20 text-white flex gap-0 leading-none flex-col items-center justify-center'>
         <p>+</p>
         <p>
           +<span className='carousel__plus__center hover:text-gray-500'>+</span>
@@ -43,7 +43,7 @@ const Carousel = () => {
         </p>
         <p>+</p>
       </div>
-      <div className='carousel__plus cursor-default z-20 absolute left-64 bottom-20 text-white flex gap-0 leading-none flex-col items-center justify-center'>
+      <div className='carousel__plus cursor-default z-40 absolute left-64 bottom-20 text-white flex gap-0 leading-none flex-col items-center justify-center'>
         <p>+</p>
         <p>
           +<span className='carousel__plus__center hover:text-gray-500'>+</span>
@@ -51,28 +51,28 @@ const Carousel = () => {
         </p>
         <p>+</p>
       </div>
-      <div className='carousel__plus  z-20 absolute right-10 top-32 text-white flex gap-0 leading-none flex-col items-center justify-center'>
+      <div className='carousel__plus  z-40 absolute right-10 top-32 text-white flex gap-0 leading-none flex-col items-center justify-center'>
         <p>+</p>
         <p>
           +<span className='carousel__plus__center'>+</span>+
         </p>
         <p>+</p>
       </div>
-      <div className='carousel__plus  z-20 absolute right-48 bottom-32 text-white flex gap-0 leading-none flex-col items-center justify-center'>
+      <div className='carousel__plus  z-40 absolute right-48 bottom-32 text-white flex gap-0 leading-none flex-col items-center justify-center'>
         <p>+</p>
         <p>
           +<span className='carousel__plus__center'>+</span>+
         </p>
         <p className=''>+</p>
       </div>
-      <div className='carousel__plus  z-20 absolute sm:hidden lg:block right-64 bottom-64 text-white flex gap-0 leading-none flex-col items-center justify-center'>
+      <div className='carousel__plus  z-40 absolute sm:hidden lg:block right-64 bottom-64 text-white flex gap-0 leading-none flex-col items-center justify-center'>
         <p className='plusRed'>+</p>
         <p>
           +<span className='carousel__plus__center'>+</span>+
         </p>
         <p>+</p>
       </div>
-      <div className='carousel___header z-20 md:px-5 sm:justify-center sm:items-center md:self-center mt-20 flex flex-col lg:pl-20 md:justify-start md:items-start'>
+      <div className='carousel___header z-10 md:px-5 sm:justify-center sm:items-center md:self-center mt-20 flex flex-col lg:pl-20 md:justify-start md:items-start'>
         {headerVisible ? (
           <p ref={headerRef} className={` slide-top ${headerClassName}`}>
             HI, I'M HWNGMVI, I'M A
@@ -102,11 +102,10 @@ const Carousel = () => {
           </div>
         </NavLink>
       </div>
-      <div className='bgCarousel rotate-90'>
-        <p ref={leftRef} className={`${leftParaClassName}`}>
-          HM
-        </p>
-      </div>
+      <img
+        src='../Assets/avatar.png'
+        ref={leftRef}
+        className={`${leftParaClassName}`}></img>
     </div>
   );
 };

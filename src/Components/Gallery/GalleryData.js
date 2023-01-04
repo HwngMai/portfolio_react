@@ -32,3 +32,4 @@ export let GalleryData = [
     url: "https://live.staticflickr.com/65535/49565562337_846767316d_k.jpg",
   },
 ];
+export let GalleryData2 = [];
