@@ -64,9 +64,7 @@ export default function Feature() {
             target='_blank'
             className='inline-block ml-1'
             href='https:/www.github.com/hwngmai'>
-            {" "}
             <p className='sm:text-base md:text-xl underline text-center'>
-              {" "}
               My Github
             </p>
           </a>{" "}
