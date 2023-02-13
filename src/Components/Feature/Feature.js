@@ -5,7 +5,6 @@ export default function Feature() {
   const { ref: headerRef, inView: headerVisible } = useInView();
   const { ref: paraRef, inView: paraVisible } = useInView();
   const { ref: para2Ref, inView: para2Visible } = useInView();
-
   const headerClassName = `${
     headerVisible ? "slide-top" : ""
   } feature__para__header text-red-500 tracking-widest lg:text-xl md:text-sm font-bold `;
