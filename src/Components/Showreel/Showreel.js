@@ -23,8 +23,8 @@ export default function Showreel() {
           <p>
             Want to watch more?{" "}
             <a
-              target='_blank'
-              href='https://www.youtube.com/channel/UCDcODZCSLeWELJ4wP8mWJtw'>
+              href='https://www.youtube.com/channel/UCDcODZCSLeWELJ4wP8mWJtw'
+              target='_blank'>
               <span className='sm:text-base md:text-xl underline text-center'>
                 My Youtube
               </span>

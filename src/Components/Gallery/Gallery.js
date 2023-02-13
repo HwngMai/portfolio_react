@@ -49,15 +49,14 @@ export default function Gallery() {
             {" "}
             Final Cut Pro{" "}
           </span>
-          |{" "}
-          |{" "}
+          | |{" "}
         </p>
         <p ref={para2Ref} className={`${para2ClassName}`}>
           Want to see more?
           <a
+            href='https:/www.flickr.com/photos/147070878@N06'
             target='_blank'
-            className='inline-block ml-1'
-            href='https:/www.flickr.com/photos/147070878@N06'>
+            className='inline-block ml-1'>
             {" "}
             <p className='sm:text-base md:text-xl underline text-center'>
               {" "}
