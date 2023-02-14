@@ -58,10 +58,10 @@ export default function Gallery() {
             target='_blank'
             className='inline-block ml-1'>
             {" "}
-            <p className='sm:text-base md:text-xl underline text-center'>
+            <span className='sm:text-base md:text-xl underline text-center'>
               {" "}
               My Flickr
-            </p>
+            </span>
           </a>{" "}
         </p>
 
