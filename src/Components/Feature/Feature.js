@@ -59,10 +59,7 @@ export default function Feature() {
         </p>
         <p ref={para2Ref} className={`${para2ClassName}`}>
           Want to read more?
-          <a
-            target='_blank'
-            className='inline-block ml-1'
-            href='https:/www.github.com/hwngmai'>
+          <a href='https:/www.github.com/HwngMai' target='_blank'>
             <span className='sm:text-base md:text-xl underline text-center'>
               My Github
             </span>

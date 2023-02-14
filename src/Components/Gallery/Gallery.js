@@ -53,13 +53,8 @@ export default function Gallery() {
         </p>
         <p ref={para2Ref} className={`${para2ClassName}`}>
           Want to see more?
-          <a
-            href='https:/www.flickr.com/photos/147070878@N06'
-            target='_blank'
-            className='inline-block ml-1'>
-            {" "}
+          <a href='https:/www.flickr.com/photos/147070878@N06' target='_blank'>
             <span className='sm:text-base md:text-xl underline text-center'>
-              {" "}
               My Flickr
             </span>
           </a>{" "}
