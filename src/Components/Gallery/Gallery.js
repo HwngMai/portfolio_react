@@ -1,5 +1,6 @@
 import React from "react";
 import GalleryShowcase from "./GalleryShowcase";
+import GalleryShowcase2 from "./GalleryShowcase2";
 import { useInView } from "react-intersection-observer";
 
 export default function Gallery() {
@@ -59,8 +60,11 @@ export default function Gallery() {
             </span>
           </a>{" "}
         </p>
-
-        <GalleryShowcase />
+        <div className='md:grid sm:flex sm:flex-col gap-5 md:grid-cols-2'>
+          <GalleryShowcase />
+          <GalleryShowcase2 />
+          <GalleryShowcase2 />
+        </div>
       </div>
     </div>
   );

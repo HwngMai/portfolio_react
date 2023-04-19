@@ -361,6 +361,22 @@ body {
   animation-direction: alternate;
   animation-fill-mode: both;
 }
+.carouselShowcase__productItem img {
+  width: 110%;
+  aspect-ratio: 5/4;
+}
+.carouselShowcase__productItem__img {
+  filter: grayscale(1);
+  transition: all 0.5s;
+  animation: reSkewYslider2 0.4s;
+}
+.carouselShowcase:hover .carouselShowcase__productItem__img {
+  filter: grayscale(0);
+  width: 100%;
+  animation: skewYslider2 0.4s;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
 @keyframes skewYslider {
   0% {
     aspect-ratio: 5/2;
@@ -375,6 +391,22 @@ body {
   }
   100% {
     aspect-ratio: 5/2;
+  }
+}
+@keyframes skewYslider2 {
+  0% {
+    aspect-ratio: 5/4;
+  }
+  100% {
+    aspect-ratio: 1/1;
+  }
+}
+@keyframes reSkewYslider2 {
+  0% {
+    aspect-ratio: 1/1;
+  }
+  100% {
+    aspect-ratio: 5/4;
   }
 }
 /*End - Gallery */

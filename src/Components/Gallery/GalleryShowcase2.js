@@ -1,18 +1,18 @@
 import React from "react";
 import { Carousel } from "antd";
 import { useInView } from "react-intersection-observer";
-import { GalleryData } from "./GalleryData";
-const GalleryShowcase = () => {
+import { GalleryData2 } from "./GalleryData2";
+const GalleryShowcase2 = () => {
   const { ref: carouRef, inView: carouVisible } = useInView();
   const carourClassName = `${
     carouVisible ? "slide-top-delay-3" : ""
-  } carouselShowcase col-span-2 md:mt-5 sm:mt-0 md:w-full sm:w-full sm:h-full rounded-2xl `;
+  } carouselShowcase sm:mt-0 w-full h-full rounded-2xl `;
   let renderImage = () => {
-    return GalleryData.map((item, index) => {
+    return GalleryData2.map((item, index) => {
       return (
         <div
           key={index}
-          className='carouselShowcase__item relative w-full overflow: visible overflow-visible '>
+          className='carouselShowcase__productItem relative w-full overflow: visible overflow-visible '>
           <div className=' z-10 carouselShowcase__item__para absolute flex flex-col items-end justify-end bottom-5 right-5 overflow-visible'>
             <h2 className='font-bold tracking-wider uppercase sm:text-md md:text-2xl text-red-500'>
               {item.imgName}
@@ -20,7 +20,7 @@ const GalleryShowcase = () => {
             <p className='sm:text-md md:text-xl text-white'>{item.desc}</p>
           </div>
           <img
-            className='carouselShowcase__item__img object-cover rounded-2xl '
+            className='carouselShowcase__productItem__img object-cover rounded-2xl '
             src={item.url}
             alt={item.imgName}
           />
@@ -36,4 +36,4 @@ const GalleryShowcase = () => {
     </div>
   );
 };
-export default GalleryShowcase;
+export default GalleryShowcase2;
