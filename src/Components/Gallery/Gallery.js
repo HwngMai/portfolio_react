@@ -1,6 +1,7 @@
 import React from "react";
 import GalleryShowcase from "./GalleryShowcase";
 import GalleryShowcase2 from "./GalleryShowcase2";
+import GalleryShowcase3 from "./GalleryShowcase3";
 import { useInView } from "react-intersection-observer";
 
 export default function Gallery() {
@@ -50,7 +51,7 @@ export default function Gallery() {
             {" "}
             Final Cut Pro{" "}
           </span>
-          | |{" "}
+          | {" "}
         </p>
         <p ref={para2Ref} className={`${para2ClassName}`}>
           Want to see more?
@@ -60,10 +61,12 @@ export default function Gallery() {
             </span>
           </a>{" "}
         </p>
-        <div className='md:grid sm:flex sm:flex-col gap-5 md:grid-cols-2'>
+        <div className='md:grid sm:flex sm:flex-col sm:gap-5 gap-5 md:grid-cols-2'>
           <GalleryShowcase />
           <GalleryShowcase2 />
+          <GalleryShowcase3 />
           <GalleryShowcase2 />
+
         </div>
       </div>
     </div>

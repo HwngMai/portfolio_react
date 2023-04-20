@@ -377,6 +377,22 @@ body {
   animation-direction: alternate;
   animation-fill-mode: both;
 }
+.carouselShowcase__portraitItem img {
+  width: 110%;
+  aspect-ratio: 3/5;
+}
+.carouselShowcase__portraitItem__img {
+  filter: grayscale(1);
+  transition: all 0.5s;
+  animation: reSkewYslider3 0.4s;
+}
+.carouselShowcase:hover .carouselShowcase__portraitItem__img {
+  filter: grayscale(0);
+  width: 100%;
+  animation: skewYslider3 0.4s;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
 @keyframes skewYslider {
   0% {
     aspect-ratio: 5/2;
@@ -407,6 +423,22 @@ body {
   }
   100% {
     aspect-ratio: 5/4;
+  }
+}
+@keyframes skewYslider3 {
+  0% {
+    aspect-ratio: 3/5;
+  }
+  100% {
+    aspect-ratio: 3/5.5;
+  }
+}
+@keyframes reSkewYslider3 {
+  0% {
+    aspect-ratio: 3/5.5;
+  }
+  100% {
+    aspect-ratio: 3/5;
   }
 }
 /*End - Gallery */
