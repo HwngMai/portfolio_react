@@ -3,6 +3,7 @@ import GalleryShowcase from "./GalleryShowcase";
 import GalleryShowcase2 from "./GalleryShowcase2";
 import GalleryShowcase3 from "./GalleryShowcase3";
 import { useInView } from "react-intersection-observer";
+import GalleryShowcase4 from "./GalleryShowcase4";
 
 export default function Gallery() {
   const { ref: headerRef, inView: headerVisible } = useInView();
@@ -65,7 +66,7 @@ export default function Gallery() {
           <GalleryShowcase />
           <GalleryShowcase2 />
           <GalleryShowcase3 />
-          <GalleryShowcase2 />
+          <GalleryShowcase4 />
 
         </div>
       </div>
