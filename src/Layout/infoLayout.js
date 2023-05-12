@@ -1,11 +1,10 @@
 import React from "react";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
-import Scroll from "../Components/Scroll/Scroll";
-import LeftNav from "../Components/Nav/LeftNav";
 import { useRef, useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { setScroll } from "../Redux/Action/LocationAction";
+import BackButton from "../Components/Scroll/BackButton";
 
 export default function InfoLayout({ Component }) {
   // tạo ref để lưu giá trị thay đổi của vị trí
@@ -25,8 +24,7 @@ export default function InfoLayout({ Component }) {
   } else dispatch(setScroll(false));
   return (
     <div className='layout'>
-      <Header />
-      <Scroll />
+      <BackButton />
       <div className='-z-10 w-full'>
         <Component />
       </div>

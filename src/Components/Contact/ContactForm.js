@@ -35,8 +35,8 @@ const ContactForm = () => (
     }}
     validateMessages={validateMessages}>
     <Form.Item
-      name={["user", "name"]}
-      label='Name'
+      name={["user", "Your name"]}
+      label='Your name'
       rules={[
         {
           required: true,
@@ -45,7 +45,7 @@ const ContactForm = () => (
       <Input />
     </Form.Item>
     <Form.Item
-      name={["user", "email"]}
+      name={["user", "Email"]}
       label='Email'
       rules={[
         {
@@ -54,10 +54,10 @@ const ContactForm = () => (
       ]}>
       <Input />
     </Form.Item>
-    <Form.Item name={["user", "website"]} label='Website'>
+    <Form.Item name={["user", "Subject"]} label='Subject'>
       <Input />
     </Form.Item>
-    <Form.Item name={["user", "Message"]} label='Introduction'>
+    <Form.Item name={["user", "Message"]} label='Message'>
       <Input.TextArea />
     </Form.Item>
     <Form.Item
